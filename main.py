@@ -44,12 +44,11 @@ def get_user(conn, name):
     finally:
         cursor.close()
 
+ # Напишите функцию, которая считает количество гласных в строке, и создайте тесты для этой функции.
 def count_vowels_and_consonants(s):
-    vowels = 'аеёиоуыэюяйАЕЁИОУЫЭЮЯЙaeiouAEIOU'
-    consonants = 'бвгджзклмнпрстфхцчшщБВГДЖЗКЛМНПРСТФХЦЧШЩbcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+    vowels = 'аеёиоуыэюяйАЕЁИОУЫЭЮЯЙaeiouyAEIOUY'
+    consonants = 'бвгджзклмнпрстфхцчшщБВГДЖЗКЛМНПРСТФХЦЧШЩbcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
     num_vowels = sum(1 for c in s if c in vowels)
     num_consonants = sum(1 for c in s if c in consonants)
     return num_vowels, num_consonants
-
-
 
