@@ -69,7 +69,7 @@ def test_mixed_string():
     assert num_consonants == 7
 
 # - Проверьте, что функция правильно считает гласные в смешанных строках (включая прописные и строчные буквы)
-# .
+#  функция с намеренной ошибкой
 def test_mixed_string_mistake():
     input_str = 'Hello Привет'
     num_vowels, num_consonants = count_vowels_and_consonants(input_str)
